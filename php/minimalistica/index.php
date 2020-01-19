@@ -1,7 +1,9 @@
-<?php>
-		$title = "<h1>minimalistica</h1>"
-		$paragraph = "<p class="info">posted 3 hours ago in <a href="#">general</a></p>"
- <?>
+
+	<?php
+		$title = "minimalistica";
+		$paragraph = "posted 3 hours ago in ";
+	?>
+ 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +14,7 @@
 </head>
 <body>
 	<div id="content">
-		<?php>$title<?>
+		<h1><?=$title ?></h1>
 		
 		<ul id="menu">
 			<li><a href="#">home</a></li>
@@ -23,7 +25,7 @@
 		<div class="post">
 			<div class="details">
 				<h2><a href="#">Nunc commodo euismod massa quis vestibulum</a></h2>
-				<?php>$paragraph<?>
+				<p class="info"><?=$paragraph?><a href="#">general</a></p>
 			
 			</div>
 			<div class="body">
