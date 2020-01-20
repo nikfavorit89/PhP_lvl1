@@ -11,11 +11,10 @@ else if ($a <= 0 && $b <= 0){
 else if ($a >= 0 && $b <= 0 || $a <= 0 && $b >= 0){
     return echo $a + $b;
 }
-?>
+
 
 // задание второе
 
-<?php
 $a = rand(0,15)
 switch $a {
     case $a = 0:
@@ -51,4 +50,47 @@ switch $a {
     case $a = 15:
        echo "a = 15"."<br>";
        break;
+}
+
+// звдание 3
+function summ ($a, $b){
+    return $a + $b;
+}
+function razn ($a, $b){
+    return $a - $b;
+}
+function proizv ($a, $b){
+    return $a * $b;
+}
+function del ($a, $b){
+    return $a / $b;
+}
+
+// задание 4
+$operation = [summ ($arg1,  $arg2), razn ($arg1, $arg2), proizv ($arg1,  $arg2), del ($arg1,  $arg2)];
+$operation1 = $operation[rand(0,3)];
+function mathOperation($arg1, $arg2, $operation1) {
+    switch ($operation1) {
+        case "summ ($arg1,  $arg2)":
+            echo "сумма arg1 и arg2 = ".summ ($arg1,  $arg2);
+            break;
+        case "razn ($arg1, $arg2)":
+            echo "разность arg1 и arg2 = ".razn ($arg1, $arg2);
+            break;
+        case "proizv ($arg1,  $arg2)":
+            echo "произведение arg1 и arg2 = ".proizv ($arg1,  $arg2);
+            break;
+        case "del ($arg1,  $arg2)":
+            echo "деление arg1 на arg2 = ".del ($arg1,  $arg2);
+            break;
+        default:
+            echo "несуществующее значение операции";
+    }
+}
+
+// задание 5
+$val = 2
+$pow = 3
+function power($val, $pow){
+
 }
