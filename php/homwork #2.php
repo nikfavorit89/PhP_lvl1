@@ -11,6 +11,7 @@ else if ($a <= 0 && $b <= 0){
 else if ($a >= 0 && $b <= 0 || $a <= 0 && $b >= 0){
     return echo $a + $b;
 }
+<br>
 
 
 // задание второе
@@ -51,6 +52,7 @@ switch $a {
        echo "a = 15"."<br>";
        break;
 }
+<br>
 
 // звдание 3
 function summ ($a, $b){
@@ -65,6 +67,7 @@ function proizv ($a, $b){
 function del ($a, $b){
     return $a / $b;
 }
+<br>
 
 // задание 4
 $operation = [summ ($arg1,  $arg2), razn ($arg1, $arg2), proizv ($arg1,  $arg2), del ($arg1,  $arg2)];
@@ -87,10 +90,12 @@ function mathOperation($arg1, $arg2, $operation1) {
             echo "несуществующее значение операции";
     }
 }
+<br>
 
 // задание 5
-$val = 2
-$pow = 3
 function power($val, $pow){
+        if ($pow == 0);
+        return 1;
+    return $val * power ($val, ($pow - 1));
 
 }
