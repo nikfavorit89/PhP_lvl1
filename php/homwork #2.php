@@ -3,13 +3,13 @@
 $a = 1
 $b = 2
 if ($a >= 0 && $b >= 0){
-    return echo $a - $b;
+    return  $a - $b;
 }
 else if ($a <= 0 && $b <= 0){
-    return echo $a * $b;
+    return  $a * $b;
 }
 else if ($a >= 0 && $b <= 0 || $a <= 0 && $b >= 0){
-    return echo $a + $b;
+    return  $a + $b;
 }
 <br>
 
@@ -65,6 +65,9 @@ function proizv ($a, $b){
     return $a * $b;
 }
 function del ($a, $b){
+   if ($b === 0){
+      echo "на ноль делить нельзя";
+   }
     return $a / $b;
 }
 <br>
